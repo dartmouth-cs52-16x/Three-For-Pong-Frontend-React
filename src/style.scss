@@ -1,0 +1,310 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #4dc061;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 16px;
+}
+
+#header {
+  margin: -10px;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#name {
+  margin-top: -10px;
+  margin-bottom: -15px;
+  font-size: 36px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Lobster', sans-serif;
+}
+
+#logoimg {
+  max-height: 100px;
+  max-width: 100px;
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 700px) {
+  #menu {
+    flex-direction: column;
+  }
+}
+
+#createlink {
+  padding-top: 8px;
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+#postscontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-bottom: 150px;
+
+}
+
+#posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, .7);
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+#post {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  color: #404040;
+  margin-bottom: 5px;
+  background-color: #fafafa;
+  padding: 10px;
+  height: 70px;
+}
+
+#postinfo {
+  margin-top: 20px;
+}
+
+#pinnedpost {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#pin {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  margin-top: 2px;
+}
+
+#newcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#new {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, .7);
+  width: 70%;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#new > input {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#newcontent {
+  font-size: 18px;
+}
+
+#new > h2 {
+  text-align: center;
+}
+
+#submitbuttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  font-family: 'Futura', sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  text-decoration: none;
+  color: white;
+}
+
+#subbutton:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#showcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#show {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, .7);
+  width: 70%;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#showtitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: -20px;
+}
+
+#showtitleicons {
+  margin-top: 20px;
+}
+
+#editcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#edit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, .7);
+  width: 70%;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#titlebar {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#titletextarea {
+  font-size: 24px;
+}
+
+#icons {
+  margin-top: 20px;
+}
+
+#edittags {
+  margin-bottom: 10px;
+}
+
+footer {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#contentnew {
+  font-size: 18px;
+}
+
+.signlink {
+  font-size: 48px;
+  color: #cccccc;
+  font-weight: bold;
+  text-decoration: none;
+  transition-duration: .3s;
+}
+
+.signlink:hover {
+  color: black;
+}
+
+.signlinks {
+  margin-top: 5px;
+  transition-duration: 1s;
+}
+
+#postauthor {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+#error {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.submitnew {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.submitnew:hover {
+  text-decoration: underline;
+}
+
+#editpreviewcontent {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#createfooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  background-color: #77cdf6;
+  color: white;
+  font-family: 'Futura', sans-serif;
+  font-size: 48px;
+  font-style: italic;
+  text-decoration: none;
+}
+
+#creategame {
+  color: white;
+  text-decoration: none;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+#createfields {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
